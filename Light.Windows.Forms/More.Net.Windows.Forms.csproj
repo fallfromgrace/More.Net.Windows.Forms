@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91D6036F-BC3F-4A0A-865D-521DC6A62C7D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>More.Net.Windows.Forms</RootNamespace>
+    <AssemblyName>More.Net.Windows.Forms</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\More.Net.Windows.Forms.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="InTheHand.Net.Personal">
+      <HintPath>..\packages\32feet.NET.3.5.0.0\lib\net\InTheHand.Net.Personal.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="More.Net">
+      <HintPath>..\packages\More.Net.1.0.0.25609\lib\portable-net45+win+wpa81\More.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="More.Net.Windows">
+      <HintPath>..\packages\More.Net.Windows.1.0.0.26432\lib\net45\More.Net.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="More.Net.Windows.Desktop">
+      <HintPath>..\packages\More.Net.Windows.Desktop.1.0.0.17666\lib\net45\More.Net.Windows.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\packages\Rx-Core.2.2.5\lib\net45\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\packages\Rx-Interfaces.2.2.5\lib\net45\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>..\packages\Rx-Linq.2.2.5\lib\net45\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\net45\System.Reactive.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlExtensions\AddBinding.cs" />
+    <Compile Include="DrawingExtensions.cs" />
+    <Compile Include="GraphicsOverlay\AnimatedOverlay.cs" />
+    <Compile Include="GraphicsOverlay\BorderOverlay.cs" />
+    <Compile Include="GraphicsOverlay\DimmingOverlay.cs" />
+    <Compile Include="GraphicsOverlay\GraphicalOverlay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GraphicsOverlay\ImageOverlay.cs" />
+    <Compile Include="GraphicsOverlay\IOverlay.cs" />
+    <Compile Include="GraphicsOverlay\MessageOverlay.cs" />
+    <Compile Include="GraphicsOverlay\Overlay.cs" />
+    <Compile Include="GraphicsOverlay\OverlayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interop\CLSIDGuid.cs" />
+    <Compile Include="Interop\COMDLG_FILTERSPEC.cs" />
+    <Compile Include="Interop\FDAP.cs" />
+    <Compile Include="Interop\FDE_OVERWRITE_RESPONSE.cs" />
+    <Compile Include="Interop\FDE_SHAREVIOLATION_RESPONSE.cs" />
+    <Compile Include="Interop\FILEOPENDIALOGOPTIONS.cs" />
+    <Compile Include="Interop\FileOpenDialogRCW.cs" />
+    <Compile Include="Interop\FileSaveDialogRCW.cs" />
+    <Compile Include="Interop\HookProcCode.cs" />
+    <Compile Include="Interop\HookProcHandler.cs" />
+    <Compile Include="Interop\HookType.cs" />
+    <Compile Include="Interop\HRESULT.cs" />
+    <Compile Include="Interop\HRESULT2.cs" />
+    <Compile Include="Interop\IFileDialog.cs" />
+    <Compile Include="Interop\IFileDialogEvents.cs" />
+    <Compile Include="Interop\IFileOpenDialog.cs" />
+    <Compile Include="Interop\IFileSaveDialog.cs" />
+    <Compile Include="Interop\IIDGuid.cs" />
+    <Compile Include="Interop\IModalWindow.cs" />
+    <Compile Include="Interop\IShellItem.cs" />
+    <Compile Include="Interop\IShellItemArray.cs" />
+    <Compile Include="Interop\KBDLLHOOKSTRUCT.cs" />
+    <Compile Include="Interop\KBDLLHOOKSTRUCTFlags.cs" />
+    <Compile Include="Interop\NativeFileOpenDialog.cs" />
+    <Compile Include="Interop\NativeFileSaveDialog.cs" />
+    <Compile Include="Interop\NativeMethods.cs" />
+    <Compile Include="Interop\SetWindowPosFlags.cs" />
+    <Compile Include="Interop\ShowWindowCommands.cs" />
+    <Compile Include="Interop\SIGDN.cs" />
+    <Compile Include="Interop\User32.cs" />
+    <Compile Include="Interop\Win32Messages.cs" />
+    <Compile Include="Interop\WM_NCHITTEST_Results.cs" />
+    <Compile Include="Interop\WndProc.cs" />
+    <Compile Include="IOpenFolderDialog.cs" />
+    <Compile Include="ISynchonizeInvokeExtensions.cs" />
+    <Compile Include="Localization\Localizer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Localization\LocalizerDesigner.cs" />
+    <Compile Include="Localization\LocalizerSerializer.cs" />
+    <Compile Include="Localization\ResXResourceManager.cs" />
+    <Compile Include="OpenFolderDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OpenFolderDialogInterop.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OpenFolderDialogVista.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OpenFolderDialogXP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GraphicsOverlay\OverlayForm.resx">
+      <DependentUpon>OverlayForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="More.Net.Windows.Forms.nuspec" />
+    <None Include="More.Net.Windows.Forms.symbols.nuspec" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir).nuget\NuGet.exe pack $(ProjectPath) -IncludeReferencedProjects -Symbols -OutputDirectory $(SolutionDir)..\..\Packages\NuGet\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
