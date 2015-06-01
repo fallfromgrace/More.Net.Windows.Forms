@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "More.Net.Windows.Forms", "Light.Windows.Forms\More.Net.Windows.Forms.csproj", "{91D6036F-BC3F-4A0A-865D-521DC6A62C7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "More.Net.Windows.Forms", "More.Net.Windows.Forms\More.Net.Windows.Forms.csproj", "{91D6036F-BC3F-4A0A-865D-521DC6A62C7D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F7A3802D-BA51-4D48-86E2-35A63D459D14}"
 	ProjectSection(SolutionItems) = preProject

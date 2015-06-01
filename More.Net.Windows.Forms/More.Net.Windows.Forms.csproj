@@ -35,18 +35,23 @@
   <ItemGroup>
     <Reference Include="InTheHand.Net.Personal">
       <HintPath>..\packages\32feet.NET.3.5.0.0\lib\net\InTheHand.Net.Personal.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="More.Net">
       <HintPath>..\packages\More.Net.1.0.0.25609\lib\portable-net45+win+wpa81\More.Net.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="More.Net.Windows">
       <HintPath>..\packages\More.Net.Windows.1.0.0.26432\lib\net45\More.Net.Windows.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="More.Net.Windows.Desktop">
       <HintPath>..\packages\More.Net.Windows.Desktop.1.0.0.17666\lib\net45\More.Net.Windows.Desktop.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,15 +59,19 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Reactive.Core">
       <HintPath>..\packages\Rx-Core.2.2.5\lib\net45\System.Reactive.Core.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Reactive.Interfaces">
       <HintPath>..\packages\Rx-Interfaces.2.2.5\lib\net45\System.Reactive.Interfaces.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Reactive.Linq">
       <HintPath>..\packages\Rx-Linq.2.2.5\lib\net45\System.Reactive.Linq.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Reactive.PlatformServices">
       <HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\net45\System.Reactive.PlatformServices.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
